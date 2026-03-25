@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bong Thom</title>
+  <link rel="icon" href="images/btdclogo1.gif" type="image/gif">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="site-header">
+      <table>
+        <tr>
+          <th rowspan="2">
+            <a href="#index.html">
+              <img src="images/btdclogo1.gif" alt="Bong Thom Dot Com">
+            </a>
+          </th>
+          <td class="green">Bong Thom</td>
+          <td class="blue">Dot Com</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="slogan">Jobs, classifieds and other services for Cambodia</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Language Bar -->
+    <div class="language-bar">
+      <img src="images/kh.gif" alt="Cambodian Flag">
+      <span style="color: blue; font-weight: bold">ខ្មែរ</span>
+      <img src="images/installunicodemedium.gif" alt="Install Khmer">
+    </div>
+
+    <!-- Search Nav -->
+    <table class="search-nav-table">
+      <tr>
+        <!-- Member Logins -->
+        <td class="search-block jobs-search">
+          <ul class="auth-links-nav">
+            <li><img src="images/secure.gif" alt=""> <a href="#">Member Login</a></li>
+            <li><img src="images/secure.gif" alt=""> <a href="#">Sign Up</a></li>
+            <li><img src="images/secure.gif" alt=""> <a href="#">Employer Login</a></li>
+          </ul>
+        </td>
+
+        <!-- Job List -->
+        <td class="search-block classifieds-search">
+          <div class="nav-item-content">
+            <img src="images/jobs_1_qv.gif" alt="JV">
+            <span class="text-col" style="display:flex; align-items:center; justify-content:center;">Job List</span>
+          </div>
+        </td>
+
+        <!-- Job Search -->
+        <td class="search-block classifieds-search">
+          <div class="nav-item-content">
+            <img src="images/jobs_1_search.gif" alt="SJ">
+            <span class="text-col" style="display:flex; align-items:center; justify-content:center; padding-left:10px;">Job Search</span>
+          </div>
+        </td>
+
+        <!-- Classified List -->
+        <td class="search-block classifieds-search">
+          <div class="nav-item-content">
+            <img src="images/class_1_qv.gif" alt="QV">
+            <span class="text-col" style="display:flex; align-items:center; justify-content:center; padding-left:30px;">Classified List</span>
+          </div>
+        </td>
+
+        <!-- Classified Search -->
+        <td class="search-block classifieds-search">
+          <div class="nav-item-content">
+            <img src="images/class_1_search.gif" alt="CS">
+            <span class="text-col" style="display:flex; align-items:center; justify-content:center; padding-left:30px;">Classified Search</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <img src="images/secure.gif" width="13" alt="secure">
+
+    <div class="main-layout">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Quick Links -->
+        <table class="sb-table">
+          <tr><td class="sb-main-header">Quick Links</td></tr>
+          <tr>
+            <td class="sb-pink-row" style="text-align:center; padding:5px;">
+              <div style="font-weight:bold; display:flex; align-items:center; justify-content:center; gap:5px;">
+                Bong Thom-ID:
+                <input type="text" style="width:31.5px; height:30px; padding:0px;">
+                <button style="color:#008000; border:1px solid #000; background:#efefef; padding:1.5px;">></button>
+              </div>
+            </td>
+          </tr>
+          <tbody id="quick-links-list">
+            <!-- add from javascript -->
+          </tbody>
+        </table>
+
+        <!-- Job Quick Lists -->
+        <table class="sb-table" style="margin-top:10px;">
+          <tr><td class="sb-main-header">Job Quick Lists</td></tr>
+          <tbody id="job-quick-lists">
+            <!-- add from javascript -->
+          </tbody>
+        </table>
+
+        <!-- Other Services -->
+        <table class="sb-table" style="margin-top:10px;">
+          <tr><td class="sb-main-header">Other Services</td></tr>
+          <tr class="sb-pink-row">
+            <td><a href="#" class="sb-item">» Khmer / English / French MP3 Phrasebook</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px; background-color:#ffe8e8;">
+              <img src="images/sitelock_shield.png" alt="SiteLock Secure" style="max-width:150px; border:1px solid #ccc;">
+            </td>
+          </tr>
+        </table>
+
+        <!-- RSS Files -->
+        <table class="sb-table" style="margin-top:10px;">
+          <tr><td class="sb-main-header">RSS Files</td></tr>
+          <tbody id="rss-feeds-list">
+            <!-- add from javascript -->
+          </tbody>
+          <tr class="sb-pink-row">
+            <td style="display: flex; align-items: center; gap: 5px; font-weight: bold;"><span class="rss-footer">Click here</span>to download an RSS browser</td>
+          </tr>
+        </table>
+
+        <div style="margin-top:15px; font-size:11px; color:#333; padding:5px; background-color:#ffe8e8;">
+          * NOTE: The numbers in brackets above ( ) are the number of announcements containing job positions in that category
+        </div>
+      </div>
+
+      <!-- Content Area -->
+      <table class="content-table" style="width:100%; border-collapse:collapse; table-layout:fixed;">
+        <tr style="vertical-align:top;">
+          <!-- Jobs Column -->
+          <td class="qv-col qv-divider" style="background-color:#eff7f8; vertical-align:top;">
+            <div class="qv-header-jobs">
+              Quick View Latest Jobs
+              <span style="font-size:11px; font-weight:normal; color:#490106; margin-left:10px;">
+                ( <img src="images/new.png" alt="new" style="vertical-align:middle; height:14px;"> = New )
+              </span>
+            </div>
+            <div class="qv-search-row">
+              Search Job Title
+              <input type="text" style="width:105px; height:30px;">
+              <button style="color:#008000; border:1px solid #000; background:#efefef; padding:1.5px;">></button>
+            </div>
+            <div class="job-title-wrap">
+              <table id="jobs-list" class="qv-list"></table>
+            </div>
+            <ul class="job-company">
+
+            </ul>
+            <div style="text-align:center; margin-bottom:10px;">
+              <a href="#" style="font-size:11px; font-weight:bold; color:#490106; display:flex; justify-content:center;">Quick View all active jobs</a>
+            </div>
+          </td>
+
+          <!-- Classifieds Column -->
+          <td class="qv-col classifieds-col" style="padding:0; border:1px solid #ccc; border-left:none; background-color:#f8f0ff; vertical-align:top;">
+            <div class="qv-header-class">Quick View Latest Classifieds</div>
+            <div class="qv-search-row">
+              Search Classifieds Title
+              <input type="text" style="width:105px; height:30px;">
+              <button style="color:#008000; border:1px solid #000; background:#efefef; padding:1.5px;">></button>
+            </div>
+            <div class="classifieds-wrap">
+              <ul id="classifieds-list" class="qv-list"></ul>
+              <ul id="classifieds-details" class="qv-detail"></ul>
+            </div>
+            <div style="text-align:center; margin-bottom:10px;">
+              <a href="#" class="qv-all-link">Quick View all classified ads</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <table class="footer" style="width:100%;">
+      <tr><td><div class="footer-separator"></div></td></tr>
+      <tr>
+        <td class="footer-content">
+          <div class="footer-links">
+            <a href="#">Contact us</a> | <a href="#">Terms and conditions</a> | <a href="#">Corporate services</a>
+          </div>
+          <div class="footer-copy">Copyright &copy; 2000 - 2015, Khojma Co.</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,702 @@
+/* root */
+:root {
+  --primary-blue: #0000ff;
+  --accent-red: #cc0000;
+  --text-black: #000000;
+  --bg-white: #ffffff;
+  --bg-light-gray: #f0f0f0;
+  --border-color: #cccccc;
+  --font-family: Arial, Helvetica, sans-serif;
+  --font-size-base: 12px;
+}
+
+/* language bar */
+.language-bar {
+  padding: 8px;
+  background-color: #e0e8f8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* sidebar */
+.sb-main-header {
+  background-color: #e0e8f8;
+  color: #800000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px 0;
+}
+
+.sb-sub-header {
+  background-color: #e0e8f8;
+  color: #0000ff;
+  text-align: center;
+  font-weight: bold;
+  padding: 2px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.rss-feeds-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+  text-decoration: underline;
+}
+
+.rss-footer {
+  color: #0000ee;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.sb-pink-row {
+  background-color: #ffe8e8;
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+  padding-left: 12px;
+}
+
+.blue {
+  color: #0000ee;
+}
+
+.ql-align-text-center {
+  text-align: center;
+}
+
+.sb-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #000;
+  font-weight: bold;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.sb-item-blue {
+  color: #0000ee !important;
+  display: flex;
+  text-align: center;
+}
+
+.sb-item-blue img {
+  width: 24px;
+  height: 24px;
+}
+
+.sb-item-blue:hover {
+  text-decoration: underline;
+}
+
+.sb-item:hover {
+  text-decoration: underline;
+}
+
+.sb-count {
+  font-weight: normal;
+  color: #000;
+  margin-left: 2px;
+}
+
+.sb-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sb-badge-new {
+  color: #ff0000;
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 11px;
+}
+
+.rss-link {
+  color: #0000ee;
+  font-weight: normal;
+  font-size: 11px;
+}
+
+.rss-icon {
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body */
+body {
+  padding: 75px 54px 8px 54px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--text-black);
+  background-color: var(--bg-white);
+  line-height: 1.4;
+}
+
+/* links */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+/* container */
+.container {
+  width: var(--container-width);
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(--bg-white);
+}
+
+.site-logo-text {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.BongthomLogo {
+  display: inline-flex;
+}
+
+th {
+  color: #333;
+  font-weight: bold;
+  padding: 8px 10px;
+  text-align: left;
+  background: transparent;
+}
+
+/* Header Styles */
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Logo Styles */
+.site-header .blue {
+  margin-top: 40px;
+  display: inline-flex;
+  color: var(--primary-blue);
+  font-weight: bold;
+  font-family: "Arial Narrow";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.site-header .green {
+  margin-top: 40px;
+  display: inline-flex;
+  color: #066;
+  font-family: "Arial Black";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.slogan {
+  color: var(--luxeestate-real-87-aura-build-black,
+      var(--color-black-solid, #000));
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 85px;
+}
+
+.quick-slinks {
+  flex-direction: column;
+  align-items: flex-start;
+  background: #e0e8f8;
+}
+
+.quick-slinks-title {
+  color: #800000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.flags {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.auth-links {
+  font-size: 11px;
+}
+
+/* search navigation */
+.search-nav-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  table-layout: fixed;
+}
+
+.search-block {
+  padding: 5px 10px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  min-height: 60px;
+  vertical-align: middle;
+}
+
+.search-block:last-child {
+  border-right: none;
+}
+
+.jobs-search {
+  background-color: #e0e8f8;
+  color: #0000ff;
+}
+
+.classifieds-search {
+  padding-left: 82px;
+  padding-right: 82px;
+  background-color: #ffeded;
+  color: #cc0000;
+}
+
+.auth-links-nav {
+  font-size: 11px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.auth-links-nav li {
+  margin: 2px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nav-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.text-col {
+  display: flex;
+  width: 23.34px;
+  padding: 4px 1px 4.5px 1px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.classifieds-search span {
+  color: #cc0000;
+}
+
+.search-block button {
+  padding: 4px 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  gap: 8px;
+}
+
+.sidebar,
+table {
+  text-align: left;
+}
+
+th {
+  text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 231.4px;
+  flex-shrink: 0;
+}
+
+.sidebar section {
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  background-color: #f9f9f9;
+}
+
+.sidebar h3 {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--border-color);
+  color: #333;
+}
+
+.sidebar ul {
+  padding: 5px 0;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--primary-blue);
+}
+
+.sidebar li a:hover {
+  background-color: #eee;
+  text-decoration: underline;
+}
+
+.badges {
+  padding: 10px;
+  text-align: center;
+}
+
+.badge {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  color: #666;
+}
+
+/* content area */
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.qv-col {
+  min-height: 400px;
+  background-color: #fff;
+  vertical-align: top;
+}
+
+.qv-divider {
+  border-right: 3px dashed #000000;
+}
+
+.classifieds-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 10px 25px;
+}
+ 
+.classifieds-col {
+  background-color: #f8f0ff !important;
+}
+
+.classifieds-col .qv-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.qv-header-jobs {
+  background-color: #e0e8f8;
+  color: #800000;
+  text-align: center;
+  font-weight: bold;
+  padding: 4px 0;
+  font-size: 15px;
+}
+
+.qv-header-class {
+  background-color: #e0e8f8;
+  color: #800000;
+  text-align: center;
+  font-weight: bold;
+  padding: 4px 0;
+  font-size: 15px;
+}
+
+.qv-search-row {
+  background-color: #ffeded;
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.qv-search-row input {
+  width: 100px;
+  height: 18px;
+  border: 1px solid #777;
+  vertical-align: middle;
+}
+
+/* quick view list */
+.dot {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.qv-list {
+  display: flex;
+  flex-direction: column;
+  color: #0000ee;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  list-style: disc;
+  padding: 10px 25px;
+}
+
+.job-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.title-text {
+  text-decoration: underline;
+}
+
+.dot {
+  text-decoration: none;
+}
+
+.job-title-company {
+  display: flex;
+  flex-direction: row;
+}
+
+.job-company {
+  display: flex;
+  color: #333333;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#classifieds-list {
+  padding: 0;
+}
+
+.classified-data-title{
+  text-decoration: underline;
+}
+
+.qv-detail {
+  display: flex;
+  color: #333333;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.qv-detail li {
+  text-decoration: none;
+}
+
+.qv-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.qv-list a {
+  text-decoration: underline;
+}
+
+.qv-item {
+  line-height: 1.5;
+  color: #0000ee;
+}
+
+.item-title {
+  color: #0000ee;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.item-info {
+  color: #333;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+}
+
+.qv-all-link {
+  color: #800000 !important;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+}
+
+/* content column */
+.content-column {
+  flex: 1;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-blue);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.content-header {
+  background-color: #e0e8f8;
+  color: #800000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.classifieds-column .column-header {
+  border-bottom-color: var(--accent-red);
+}
+
+.column-header h3 {
+  color: var(--primary-blue);
+  font-size: 14px;
+}
+
+.classifieds-column .column-header h3 {
+  color: var(--accent-red);
+}
+
+/* listing items */
+.listing-items {
+  border-top: 1px solid #eee;
+}
+
+.listing-item {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.listing-item .icon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.listing-item .details {
+  flex: 1;
+}
+
+.listing-item .title {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.listing-item .price {
+  color: var(--accent-red);
+  font-weight: bold;
+}
+
+/* footer */
+.footer {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-separator {
+  background-color: #808080;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.footer-content {
+  text-align: center;
+  font-family: "Papyrus, Arial", Times, serif;
+  font-size: 12px;
+}
+
+.footer-links {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #0000ee;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  color: #000000;
+}
