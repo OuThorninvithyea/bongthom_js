@@ -1,0 +1,120 @@
+<svg width="1200" height="1800" viewBox="0 0 1200 1800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="120" y1="80" x2="1080" y2="1720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8E8"/>
+      <stop offset="1" stop-color="#F5E1BF"/>
+    </linearGradient>
+    <linearGradient id="bluePanel" x1="216" y1="236" x2="972" y2="1050" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1645B9"/>
+      <stop offset="1" stop-color="#061A63"/>
+    </linearGradient>
+    <linearGradient id="redPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F14A3B"/>
+      <stop offset="1" stop-color="#B1150B"/>
+    </linearGradient>
+    <linearGradient id="goldPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFD365"/>
+      <stop offset="1" stop-color="#F2A800"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#071337" flood-opacity="0.18"/>
+    </filter>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="1800" fill="url(#bgGradient)"/>
+  <rect x="42" y="42" width="1116" height="1716" rx="30" stroke="#09257D" stroke-width="12"/>
+  <rect x="72" y="72" width="1056" height="1656" rx="20" stroke="#F14A3B" stroke-width="4" stroke-dasharray="14 14"/>
+
+  <circle cx="152" cy="164" r="110" fill="#F14A3B" fill-opacity="0.15"/>
+  <circle cx="1038" cy="316" r="126" fill="#FFD365" fill-opacity="0.30"/>
+  <circle cx="958" cy="1496" r="158" fill="#1645B9" fill-opacity="0.12"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="144" y="214" width="912" height="732" rx="34" fill="url(#bluePanel)"/>
+    <rect x="144" y="214" width="912" height="732" rx="34" fill="url(#gridPattern)"/>
+  </g>
+
+  <rect x="144" y="996" width="912" height="88" rx="18" fill="#FFF6E8"/>
+  <rect x="144" y="1116" width="438" height="418" rx="28" fill="url(#redPanel)"/>
+  <rect x="618" y="1116" width="438" height="418" rx="28" fill="#FFF6E8"/>
+  <rect x="144" y="1568" width="912" height="114" rx="28" fill="#09257D"/>
+
+  <text x="180" y="146" fill="#09257D" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" letter-spacing="8">
+    BONG THOM
+  </text>
+  <text x="180" y="186" fill="#F14A3B" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">
+    JOBS, CLASSIFIEDS AND OTHER SERVICES FOR CAMBODIA
+  </text>
+
+  <text x="214" y="370" fill="#FFD365" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" letter-spacing="10">
+    CAREER EXPO
+  </text>
+  <text x="212" y="610" fill="#FFF6E8" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="180" font-weight="900" letter-spacing="3">
+    2026
+  </text>
+  <text x="214" y="738" fill="#FFF6E8" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">
+    Meet employers. Build your next move.
+  </text>
+  <text x="214" y="820" fill="#C8D9FF" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400">
+    Live hiring booths, CV clinic, networking lounge, and skills talks
+  </text>
+
+  <rect x="214" y="860" width="232" height="56" rx="28" fill="url(#goldPanel)"/>
+  <text x="255" y="898" fill="#09257D" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" letter-spacing="2">
+    ONE DAY ONLY
+  </text>
+
+  <text x="190" y="1052" fill="#09257D" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="1">
+    SATURDAY 12 SEPTEMBER 2026   |   OLYMPIC HALL, PHNOM PENH   |   09:00 AM - 06:00 PM
+  </text>
+
+  <text x="186" y="1196" fill="#FFF6E8" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="2">
+    WHAT TO EXPECT
+  </text>
+  <text x="186" y="1270" fill="#FFF6E8" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">
+    + Company showcases
+  </text>
+  <text x="186" y="1342" fill="#FFF6E8" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">
+    + Fast-track interviews
+  </text>
+  <text x="186" y="1414" fill="#FFF6E8" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">
+    + CV and profile reviews
+  </text>
+  <text x="186" y="1486" fill="#FFF6E8" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">
+    + Free career workshops
+  </text>
+
+  <text x="660" y="1196" fill="#09257D" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="2">
+    FEATURED TRACKS
+  </text>
+  <rect x="658" y="1240" width="300" height="64" rx="16" fill="#09257D"/>
+  <text x="690" y="1282" fill="#FFF6E8" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">
+    TECH &amp; DIGITAL
+  </text>
+  <rect x="658" y="1326" width="254" height="64" rx="16" fill="#F14A3B"/>
+  <text x="690" y="1368" fill="#FFF6E8" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">
+    SALES &amp; SERVICE
+  </text>
+  <rect x="658" y="1412" width="260" height="64" rx="16" fill="#FFD365"/>
+  <text x="690" y="1454" fill="#09257D" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">
+    NGO &amp; EDUCATION
+  </text>
+
+  <text x="186" y="1642" fill="#FFF6E8" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" letter-spacing="2">
+    REGISTER NOW AT BONGTHOM.COM
+  </text>
+  <text x="186" y="1686" fill="#C6D8FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400">
+    Poster example created as editable SVG. Update text, colors, or date as needed.
+  </text>
+
+  <g opacity="0.95">
+    <rect x="864" y="150" width="112" height="112" rx="24" fill="#FFF6E8"/>
+    <rect x="886" y="174" width="68" height="68" rx="14" fill="#09257D"/>
+    <path d="M920 192L920 224" stroke="#FFD365" stroke-width="10" stroke-linecap="round"/>
+    <path d="M904 208H936" stroke="#FFD365" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="920" cy="208" r="28" stroke="#F14A3B" stroke-width="8"/>
+  </g>
+</svg>

@@ -1,0 +1,123 @@
+const classifieds = document.querySelector("#classifieds-list");
+
+// Classifieds titles data
+export const classiFiedsData = [
+  { title: "Newly renovated Hotel/Apartment for sale in Siem Reap $34,999" },
+  { title: "*❤*available now! 3bed=1000$ whole small furnished wooden villa for rent" },
+  { title: "21 unit apartment with swimming pool , furnished for sale in Touk kork:$2500000" },
+  { title: "*❤*available now! 5bed=2000$very cute whole villa +huge terrace" },
+  { title: "2bed=450$ furnished flat with suround balcony in bkk1" },
+  { title: "Big Balcony Apartment For Rent 3bedroom $650/m Near Russian Market Free Cable TV" },
+  { title: "Flat in BKK1 for rent 1 bed room $300 with balcony" },
+  { title: "Nice Apartment for Rent 2bedroom $350/m Near Russian Market Big Balcony" },
+  { title: "Villa For Rent 3bedroom $1000/m Nice Garden Tree Near Russian Market" },
+  { title: "very big Balcony 1BR furnsihed Apartment in BKK2,free wifi,cable TV see photo" },
+  { title: "Apartment For Rent 2bedrooms $250/m in BKK3 With balcony" },
+  { title: "Car For Rent, Toyota Corolla 2001, price 380$/Month" },
+  { title: "Nice Apartment For Rent 2bedroom $450/m In BKK 3 FreeWiFi Cable TV" },
+  { title: "3bed=330$ first floor flat for rent,bkk3 huge balcony ***" },
+  { title: "Brand New Swimming Pool Furnished 1BR Apartment near Russian market,see photo" },
+  { title: "Nice Apartment For Rent 1bedrooms $300/m Near NAGA World Free WiFi" },
+  { title: "Nice Apartment for Rent 2bedroom $350/m Near River side big balcony Free Wifi" },
+  { title: "2 large clean bedroom flat for rent near central market $160/Month" },
+  { title: "Car for rent" },
+  { title: "FS : New iPhones / Nikon Cameras" },
+  { title: "Fully furnished house for rent" },
+  { title: "Mattress" },
+  { title: "==================-> 1 bedroom=350$ BKK3" },
+  { title: "flat in safe and quiet area 1 bed room $180 near Royal Palace" },
+  { title: "1beds=500$ per month Furnished , Near Russian Market" },
+  { title: "Spacious 2 bedrooms=650$," },
+  { title: "2beds=450$ per month Furnished ,Toul Kork" },
+  { title: "very nice apartment in quiet area near Independent monument 2bed room $250" },
+  { title: "apartment in BKK3 1 bedroom=350$" },
+  { title: "Flat house near Sovanna Teouk Thla for Rent" },
+  { title: "brand new western apartment for rent,2bedroom 600$ see photo" },
+  { title: "Room+kitchen for rent 1bedroom 300$ free wifi" },
+  { title: "Western service apartment near Royal Palce 2 bed room $600" },
+  { title: "Generator for bidding 25 kva denyo original box Japanese 99% new" },
+  { title: "Gym Modern Western Ser Apt near BKK3 for Rent,1BR=$550" },
+  { title: "Houses in Kep" },
+  { title: "New Apartment For Rent 1bedroom $250/m Near Royal Palace Free Wifi" },
+  { title: "NEW APARTMENT FOR RENT 2BEDROOM $500/M NEAR ROYAL PALACE WIFI" },
+  { title: "3Bedrooms Apartment For Rent $450/m Near Russian Market Balcony Free Cable" },
+  { title: "1Bedroom Apartment For rent $350/m Big Balcony in Boeng Keng Kang1 Free Cable" },
+  { title: "Brand New*** Western Apartment in Russian Market for Rent,1BR=$500" },
+  { title: "Build Flats service" },
+  { title: "1bed,1bath, Nice house for rent near Aeon Mall= $300" },
+  { title: "Beautiful mini-suite for rent in Siem Reap $250" },
+  { title: "Business place 1st & 2nd Floor Flat Rent@Psah Depo" },
+  { title: "New renovation 2 bedroom Near toul Sleng with furnished= 350$" },
+  { title: "only $ 350/ bed room large space and near market full furnished" },
+  { title: "good located apartment for rent available to stay short term and long 230$/m" },
+  { title: "I want to sell this camera Canon EOS 5DS R DSLR Camera" },
+  { title: "1b room at tonle bassac foriegner zone" },
+];
+
+// Classifieds category details data
+const classiFiedsDatadetails = [
+  { detail: "BUSINESS - Lease or Sale" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "VEHICLES - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "BUSINESS - Lease or Sale" },
+  { detail: "TELEPHONES" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "GENERAL - For Sale" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "WANTED - Buy or Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Sale" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "OTHER" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "BUSINESS - Lease or Sale" },
+  { detail: "OTHER" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "HOUSES/FLATS - For Rent" },
+  { detail: "GENERAL - For Sale" },
+  { detail: "HOUSES/FLATS - For Rent" },
+];
+
+// Render classifieds with details
+export function loopingclassifed() {
+  classifieds.innerHTML = "";
+
+  for(let i = 0; i < classiFiedsData.length; i++) {
+    classifieds.innerHTML += "<li class='classified-data-title'>" + classiFiedsData[i].title + "</li>";
+
+    if (classiFiedsDatadetails[i]) {
+      classifieds.innerHTML += "<li class='qv-detail'>" + classiFiedsDatadetails[i].detail + "</li>";
+    }
+  }
+}
+
